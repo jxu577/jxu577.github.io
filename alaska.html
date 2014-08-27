@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <title>Jacqueline Xu</title>
+        <style type="text/css" src="style.css"></style>
+        <link rel="stylesheet" href="animate.css"></style>
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="wow.js"></script>
+    </head>
+
+    <body>
+
+
+        
+        <script>
+            $(document).ready(function () {
+                new WOW().init();
+        
+    var menu = $('.menu');
+    var timeout = 0;
+    var hovering = false;
+    menu.hide();
+
+    $('#mainbutton')
+        .on("mouseenter", function () {
+        hovering = true;
+        // Open the menu
+        $('#mainbutton')
+            .fadeOut(400);
+
+        $('.menu')
+            .stop(true, true)
+            .fadeIn(400);
+
+        if (timeout > 0) {
+            clearTimeout(timeout);
+        }
+    })
+        .on("mouseleave", function () {
+        resetHover();
+    });
+
+    $(".menu")
+        .on("mouseenter", function () {
+        // reset flag
+        hovering = true;
+        // reset timeout
+        startTimeout();
+    })
+        .on("mouseleave", function () {
+        // The timeout is needed incase you go back to the main menu
+        resetHover();
+    });
+
+    function startTimeout() {
+        // This method gives you 1 second to get your mouse to the sub-menu
+        timeout = setTimeout(function () {
+            closeMenu();
+        }, 200);
+    };
+
+    function closeMenu() {
+        // Only close if not hovering
+        if (!hovering) {
+            $('#mainbutton').fadeIn(400);
+            $('.menu').stop(true, true).fadeOut(400);
+        }
+    };
+
+    function resetHover() {
+        // Allow the menu to close if the flag isn't set by another event
+        hovering = false;
+        // Set the timeout
+        startTimeout();
+    };
+
+
+});
+
+
+        </script>
+
+        <div id="mainbutton">
+                <img src="navi.png">
+        </div>
+
+        <div class="menu">
+            <div class ="title"> 
+                <center>
+                    <img src="NAME.png">
+                </center>
+            </div>
+            <div class="navi">
+                <center>
+                    <a href="index.html">HOME</a>
+                    <a href="travels.html">TRAVELS</a>
+                    <a href="index.html">ABOUT</a>  
+                </center>
+            </div>
+        </div>
+
+
+
+        
+ 
+
+            <center>
+                <div id ="containn">
+                   <img style= "height:100%; width:100%"  src="ak.jpg">
+                </div>
+
+                <div class="centertext"><div class="animated fadeInDown"><p class="customfontbig">ALASKA</p></div></div>
+     <div class="text2"><p class="customfontsmall">
+        <i>Under the Bridge</i><br>
+        "Sometimes I feel<br>
+Like I don't have a partner<br>
+Sometimes I feel<br>
+Like my only friend<br>
+Is the city I live in<br>
+The city of angels<br>
+Lonely as I am<br>
+Together we cry"<br> </p><p><br><br><br>
+             <div class="divcontenitore">
+
+  <a class="button_down_container" title="">
+    <div class="arrow-down arrow_pos1 arrowflip1"></div>
+    <div class="arrow-down arrow_pos2 arrowflip2"></div>
+  </a>
+
+</div></div>
+
+<br><br><br><br><br><br><br>
+
+
+                <div id ="containn">
+                  <img style= "height:100%; width:100%"  src="ak1.jpg">
+                </div>
+
+
+
+                <div class="wow fadeInDown"><div class ="text"><i><font size="170px" color="white"><b>Liberation</b><br></font>
+
+                <font color="white"></i>
+                <div class="nine"> is a cold drink<br> </div>
+                <div class="eight"> is a sky full of lighters<br></div>
+                <div class="seven"> is the sturdiness of a jail cell<br></div>
+                <div class="six"> is the sound of raindrops on rooftops<br></div>
+                <div class="five"> is seeing you again and not feeling a thing</div>
+                </font>
+
+                </p></div>
+                </div>
+
+                 <div class="wow fadeInUp"><div class ="text3"><p class="customfontsmall"> <br><b>THE STATUE OF LIBERTY</b><br>
+                The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in Manhattan, New York City. The statue, designed by Frédéric Bartholdi, was a gift to the United States from France. The statue is of a robed female figure representing Libertas, the Roman goddess of freedom, who bears a torch and a tabula ansata upon which is inscribed the date of the American Declaration of Independence, July 4, 1776. A broken chain lies at her feet. The statue is an icon of freedom and of the United States: a welcoming signal to immigrants arriving from abroad.
+
+                </p></div>
+                </div>
+
+
+
+
+
+            <br><br><br><br><br><br><br>
+                <div id ="containn">
+                    <img style= "height:100%; width:100%"  src="ak2.jpg">
+                </div>
+                
+                <div class="wow fadeInDown"><div class="text"> <br><font size="5" color="white">The best way to drown <br>is in the inundation of good company</div></font>
+                </div>
+
+                 <div class="wow fadeInUp"><div class ="text3"><p class="customfontsmall"> <br><b>HUDSON RIVER</b><br>
+                The Hudson River is a 315-mile (507 km) watercourse that flows from north to south primarily through eastern New York State in the United States. The river is named after Henry Hudson, an Englishman sailing for the Dutch East India Company, who explored it in 1609.
+                </p></div>
+                </div>
+
+
+<br><br><br><br><br><br><br>
+
+                <div id ="containn">
+                    <img style= "height:100%; width:100%"  src="ak3.jpg">
+                </div>
+
+                 <div class="wow fadeInDown"><div class="text"> <br><font size="5" color="white"><i>Just the Girl</i><br>"She laughs at my dreams <br>but I dream about her laughter"</div></font>
+                </div>
+
+
+                  <div class="wow fadeInUp"><div class ="text3"><p class="customfontsmall"> <br><b>HUDSON RIVER</b><br>
+                The Hudson River originates at the confluence of Indian Pass Brook and Calamity Brook near the outlet of Henderson Lake in Newcomb, New York, in the Adirondack Park,[4] flowing southward past the state capital at Albany, and eventually forming the boundary between New York City and the U.S. state of New Jersey at its mouth, before emptying into Upper New York Bay. 
+                </p></div>
+                </div>
+
+
+                
+           <br><br><br><br><br><br><br>
+
+                <div id ="containn">
+                    <img style= "height:100%; width:100%"  src="ak4.jpg">
+                </div>
+
+
+<div class="wow fadeInDown"><div class="text"> 
+             
+<p align="left">
+And she waves her hand, <br>
+
+Casually in the air. As if- <br>
+
+She had not a care in the world. <br>
+
+He stares back. <br>
+
+Wait, is this <br>
+
+How I am supposed to do it? <br>
+
+Or are we just- <br>
+
+Caught in an awkward <br>
+
+silence? <br>
+
+Do I- <br>
+
+look like <br>
+
+The thoughts in my head? <br>
+
+Or am I- <br>
+
+Just another empty face? <br>
+
+Wait- <br>
+
+Do you, <br>
+
+Feel it too? <br>
+
+</div></div>
+
+
+
+                  <div class="wow fadeInUp"><div class ="text3"><p class="customfontsmall"> <br><b>MEATPACKING DISTRICT</b><br>
+                The Meatpacking District is a neighborhood in the New York City borough of Manhattan which runs roughly from West 14th Street south to Gansevoort Street, and from the Hudson River east to Hudson Street.
+                </p></div>
+                </div>
+
+
+
+
+               <br><br><br><br><br><br><br>
+
+                <div id ="containn">
+                    <img style= "height:100%; width:100%"  src="ak5.jpg">
+                </div>
+
+                
+
+                  <div class="wow fadeInDown"><div class="text"> <br><br><br><br><font size="4" color="white"><i>500 Days of Summer</i><br>Tom walked to her apartment, intoxicated by the promise of the evening. He believed that this time his expectations would align with reality.</div></font>
+                </div>
+
+
+                  <div class="wow fadeInUp"><div class ="text3"><p class="customfontsmall"> <br><b>PALANTIR TECHNOLOGIES NEW YORK OFFICE PATIO</b><br>
+                
+                </p></div>
+                </div>
+
+                 <br><br><br><br><br><br><br>
+
+                <div id ="containn">
+                    <img style= "height:100%; width:100%"  src="ak6.jpg">
+                </div>
+
+
+
+            </center>
+            <div class="main">
+                <center>
+                    <p class="customfont">
+                        
+                    </p>
+                </center>
+            </div>
+        
+
+
+        <div class = "bottom">
+            <center>
+                <p class="customfontsmall">
+                    JACQUELINE XU 
+                </p>
+        </div>
+        
+    </body>
+</html>

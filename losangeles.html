@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		<title>Jacqueline Xu</title>
+		<style type="text/css" src="style.css"></style>
+        <link rel="stylesheet" href="animate.css"></style>
+		<script src="jquery-1.11.1.min.js"></script>
+        <script src="wow.js"></script>
+	</head>
+
+	<body>
+
+
+        
+        <script>
+			$(document).ready(function () {
+                new WOW().init();
+        
+    var menu = $('.menu');
+    var timeout = 0;
+    var hovering = false;
+    menu.hide();
+
+    $('#mainbutton')
+        .on("mouseenter", function () {
+        hovering = true;
+        // Open the menu
+        $('#mainbutton')
+       		.fadeOut(400);
+
+        $('.menu')
+            .stop(true, true)
+            .fadeIn(400);
+
+        if (timeout > 0) {
+            clearTimeout(timeout);
+        }
+    })
+        .on("mouseleave", function () {
+        resetHover();
+    });
+
+    $(".menu")
+        .on("mouseenter", function () {
+        // reset flag
+        hovering = true;
+        // reset timeout
+        startTimeout();
+    })
+        .on("mouseleave", function () {
+        // The timeout is needed incase you go back to the main menu
+        resetHover();
+    });
+
+    function startTimeout() {
+        // This method gives you 1 second to get your mouse to the sub-menu
+        timeout = setTimeout(function () {
+            closeMenu();
+        }, 200);
+    };
+
+    function closeMenu() {
+        // Only close if not hovering
+        if (!hovering) {
+        	$('#mainbutton').fadeIn(400);
+            $('.menu').stop(true, true).fadeOut(400);
+        }
+    };
+
+    function resetHover() {
+        // Allow the menu to close if the flag isn't set by another event
+        hovering = false;
+        // Set the timeout
+        startTimeout();
+    };
+
+
+});
+
+
+		</script>
+
+		<div id="mainbutton">
+				<img src="navi.png">
+		</div>
+
+		<div class="menu">
+			<div class ="title"> 
+				<center>
+					<img src="NAME.png">
+				</center>
+			</div>
+			<div class="navi">
+				<center>
+					<a href="index.html">HOME</a>
+					<a href="travels.html">TRAVELS</a>
+					<a href="index.html">ABOUT</a>	
+				</center>
+			</div>
+		</div>
+
+
+
+		
+ 
+
+			<center>
+				<div id ="containn">
+                   <img style= "height:100%; width:100%"  src="la.jpg">
+				</div>
+
+                <div class="centertext"><div class="animated fadeInDown"><p class="customfontbig">LOS ANGELES</p></div></div>
+     <div class="text2"><p class="customfontsmall">
+        <i>Under the Bridge</i><br>
+        "Sometimes I feel<br>
+Like I don't have a partner<br>
+Sometimes I feel<br>
+Like my only friend<br>
+Is the city I live in<br>
+The city of angels<br>
+Lonely as I am<br>
+Together we cry"<br> </p><p><br><br><br>
+             <div class="divcontenitore">
+
+  <a class="button_down_container" title="">
+    <div class="arrow-down arrow_pos1 arrowflip1"></div>
+    <div class="arrow-down arrow_pos2 arrowflip2"></div>
+  </a>
+
+</div></div>
+
+<br><br><br><br><br><br><br>
+
+
+                <div id ="containn">
+                  <img style= "height:100%; width:100%"  src="la1.jpg">
+                </div>
+
+
+
+                <div class="wow fadeInDown"><div class ="text"><font size="5" color="white">The opposite of loneliness is engagement, yes?<br>
+                </p></div>
+                </div>
+
+                 <div class="wow fadeInUp"><div class ="text3"><p class="customfontsmall"> <br><b>GRIFFITH OBSERVATORY</b><br>
+                Griffith Observatory is a facility in Los Angeles, California sitting on the south-facing slope of Mount Hollywood in Los Angeles' Griffith Park. It commands a view of the Los Angeles Basin, including Downtown Los Angeles to the southeast, Hollywood to the south, and the Pacific Ocean to the southwest. The observatory is a popular tourist attraction with an extensive array of space and science-related displays. Since the observatory opened in 1935, admission has been free, in accordance with Griffith's will.
+
+                </p></div>
+                </div>
+
+
+
+
+
+            <br><br><br><br>
+                <div id ="containn">
+                    <img style= "height:100%; width:100%"  src="la3.jpg">
+                </div>
+                
+                <div class="wow fadeInDown"><div class="text"> <br><font size="5" color="white">
+                    Life Motifs:<br></font><font size="4" color="white">
+                     Always be hustling<br>
+                     Take care of the edge cases<br>
+                     It's not fun unless it's difficult<br>
+                     Live, so that your life is the greatest joke ever told<br>
+                </div></font>
+                </div>
+
+                 <div class="wow fadeInUp"><div class ="text3"><p class="customfontsmall"> <br><b>SANTA MONICA BEACH</b><br>
+                
+                </p></div>
+                </div>
+
+
+<br><br><br>
+
+                <div id ="containn">
+                    <img style= "height:100%; width:100%"  src="la4.jpg">
+                </div>
+
+                 <div class="wow fadeInDown"><div class="text"> <br><font size="5" color="white">
+                    And the rich, while having lived richy, had actually lived poorly.<br>
+                    While the poor, having lived poorly, had actually lived richly.
+
+
+                 </div></font>
+                </div>
+
+
+                  <div class="wow fadeInUp"><div class ="text3"><p class="customfontsmall"> <br><b>88 STEPS</b><br>
+                
+                </p></div>
+                </div>
+
+
+                
+           <br><br><br>
+
+                <div id ="containn">
+                    <img style= "height:100%; width:100%"  src="la2.jpg">
+                </div>
+
+
+<div class="wow fadeInDown"><div class="text"> 
+             
+<p align="left">
+Love is synthetic
+
+</div></div>
+
+
+
+                  <div class="wow fadeInUp"><div class ="text3"><p class="customfontsmall"> <br><b>VIEW FROM GRIFFITH OBSERVATORY</b><br>
+              
+                </p></div>
+                </div>
+
+
+
+
+               <br><br><br>
+
+                <div id ="containn">
+                    <img style= "height:100%; width:100%"  src="la5.jpg">
+                </div>
+
+                
+
+                  <div class="wow fadeInDown"><div class="text"> <br><br><br><br><font size="4" color="white"><i>The only thing she hated more than him was being without him</i></div></font>
+                </div>
+
+
+                  <div class="wow fadeInUp"><div class ="text3"><p class="customfontsmall"> <br><b>LOS ANGELES</b><br>
+                
+                </p></div>
+                </div>
+
+
+			</center>
+			<div class="main">
+				<center>
+					<p class="customfont">
+						
+					</p>
+				</center>
+			</div>
+		
+
+
+		<div class = "bottom">
+			<center>
+				<p class="customfontsmall">
+					JACQUELINE XU 
+				</p>
+		</div>
+		
+	</body>
+</html>

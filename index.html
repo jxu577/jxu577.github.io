@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		<title>Jacqueline Xu</title>
+		<style type="text/css" src="style.css"></style>
+		<script src="jquery-1.11.1.min.js"></script>
+	</head>
+
+	<body>
+
+		<script>
+
+			$(document).ready(function () {
+    var menu = $('.menu')
+    var timeout = 0;
+    var hovering = false;
+    menu.hide();
+
+    $('#mainbutton')
+        .on("mouseenter", function () {
+        hovering = true;
+        // Open the menu
+        $('#mainbutton')
+       		.fadeOut(400);
+
+        $('.menu')
+            .stop(true, true)
+            .fadeIn(400);
+
+        if (timeout > 0) {
+            clearTimeout(timeout);
+        }
+    })
+        .on("mouseleave", function () {
+        resetHover();
+    });
+
+    $(".menu")
+        .on("mouseenter", function () {
+        // reset flag
+        hovering = true;
+        // reset timeout
+        startTimeout();
+    })
+        .on("mouseleave", function () {
+        // The timeout is needed incase you go back to the main menu
+        resetHover();
+    });
+
+    function startTimeout() {
+        // This method gives you 1 second to get your mouse to the sub-menu
+        timeout = setTimeout(function () {
+            closeMenu();
+        }, 200);
+    };
+
+    function closeMenu() {
+        // Only close if not hovering
+        if (!hovering) {
+        	$('#mainbutton').fadeIn(400);
+            $('.menu').stop(true, true).fadeOut(400);
+        }
+    };
+
+    function resetHover() {
+        // Allow the menu to close if the flag isn't set by another event
+        hovering = false;
+        // Set the timeout
+        startTimeout();
+    };
+
+
+    $("#sa").on("mouseenter",function() 
+{ 
+jQuery('#contain').css("background-image", "url(peru.jpg)"); 
+}); 
+    $("#na").on("mouseenter",function() 
+{ 
+jQuery('#contain').css("background-image", "url(ny.jpg)"); 
+}); 
+    $("#aa").on("mouseenter",function() 
+{ 
+jQuery('#contain').css("background-image", "url(china.jpg)"); 
+}); 
+});
+
+
+		</script>
+
+		<div id="mainbutton">
+				<img src="navi.png">
+		</div>
+
+		<div class="menu">
+			<div class ="title"> 
+				<center>
+					<img src="NAME.png">
+				</center>
+			</div>
+			<div class="navi">
+				<center>
+					<a href="index.html">HOME</a>
+					<a href="travels.html">TRAVELS</a>
+					<a href="index.html">ABOUT</a>	
+				</center>
+			</div>
+		</div>
+
+
+
+<!--
+<div class="divcontenitore">
+<div id="mainbutton">
+  <a class="button_down_container" title="">
+    <div class="arrow-down arrow_pos1 arrowflip1"></div>
+    <div class="arrow-down arrow_pos2 arrowflip2"></div>
+  </a>
+
+</div>
+		</center>
+		</div>-->
+		
+
+ 
+
+		<div class="picture">
+			<center>
+				<div id ="containh">
+				</div>
+			</center>
+			<div class="maindown">
+				<center>
+					<p class="customfontsmall"><br><br><br>
+						Hi there. I grew up in the sunny suburbs near Los Angeles, California.<br>
+						I am currently a student at UC Berkeley studying Business and Computer Science.<br><br><br>
+						I pretty much enjoying doing all effortful activites - <br>
+						from biking across famous bridges to singing karaoke at the top of my lungs - <br>
+						these are the moments we feel most alive -<br>
+						these are the moments we live for<br><br><br>
+						I hope to share with you the ordinarily good, the estatically amazing, and the pitifully ugly<br><br><br><br><br><br><br><br><br><br>
+						<a href="https://facebook.com/jacquelinexu">FACEBOOK</a><br><br>
+						<a href="http://jacquelinexu.tumblr.com">TUMBLR</a><br><br>
+						<a href="https://www.linkedin.com/profile/view?id=145397049&trk=spm_pic">LINKEDIN</a><br><br>
+						<a href="jxu703@gmail.com">EMAIL</a><br><br>
+					</p>
+				</center>
+			</div>
+		</div>
+
+
+
+		<div class = "bottom">
+			<center>
+				<p class="customfontsmall">
+					JACQUELINE XU 
+				</p>
+		</div>
+		
+	</body>
+</html>
