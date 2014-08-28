@@ -147,13 +147,13 @@ main {
 	width: 100%;
 }
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/ny1.jpg')}
+#slide-1 .bcg {background-image:url('../img/ny/ny1.jpg')}
 
 /* Slide 2 */
 #slide-2 .bcg {background: none; background-color: #010101; height: 310px; text-align: center}
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../img/ny.jpg')}
+#slide-3 .bcg {background-image:url('../img/ny/ny.jpg')}
 
 
 /* Slide 4 */
@@ -161,32 +161,41 @@ main {
 .curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
 .curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
 
-#slide-4 .bcg {background-image:url('../img/ny3.jpg')}
+#slide-4 .bcg {background-image:url('../img/ny/ny3.jpg')}
 
 /* Slide 5 */
 #slide-5 {position: relative;}
-#slide-5 .bcg {background-image:url('../img/ny4.jpg')}
-#slide-5 .bcg2 {background-image:url('../img/ny5.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0;z-index: 1;}
-#slide-5 .bcg3 {background-image:url('../img/ny7.jpg'); background-color: #010101; z-index: 1;  position: fixed; bottom: 0; left: 0; opacity: 0;}
+#slide-5 .bcg {background-image:url('../img/ny/ny4.jpg')}
+#slide-5 .bcg2 {background-image:url('../img/ny/ny5.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0;z-index: 1;}
+#slide-5 .bcg3 {background-image:url('../img/ny/ny7.jpg'); background-color: #010101; z-index: 1;  position: fixed; bottom: 0; left: 0; opacity: 0;}
 
 #slide-6 .bcg {background: none; background-color: #010101; height: 310px; text-align: center;}
-#slide-7 .bcg {background-image:url('../img/ny5.jpg');}
-#slide-8 .bcg {background-image:url('../img/ny6.jpg');}
-#slide-9 .bcg {background-image:url('../img/ny8.jpg');}
-#slide-10 .bcg {background-image:url('../img/ny18.jpg');}
-#slide-11 .bcg {background-image:url('../img/ny10.jpg');}
-#slide-12 .bcg {background-image:url('../img/ny11.jpg');}
-#slide-13 .bcg {background-image:url('../img/ny12.jpg');}
-#slide-14 .bcg {background-image:url('../img/ny13.jpg');}
-#slide-15 .bcg {background-image:url('../img/ny14.jpg');}
-#slide-16 .bcg {background-image:url('../img/ny15.jpg');}
-#slide-17 .bcg {background-image:url('../img/ny16.jpg');}
-#slide-18 .bcg {background-image:url('../img/ny17.jpg');}
-#slide-19 .bcg {background-image:url('../img/ny9.jpg');}
+#slide-7 .bcg {background-image:url('../img/ny/ny5.jpg');}
+#slide-72 .bcg {background-image:url('../img/ny/ny72.jpg');}
+#slide-75 .bcg {background-image:url('../img/ny/ny5b.jpg');}
+#slide-8 .bcg {background-image:url('../img/ny/ny6.jpg');}
+#slide-85 .bcg {background-image:url('../img/ny/ny17b.jpg');}
+#slide-88 .bcg {background-image:url('../img/ny/ny88.jpg');}
+#slide-9 .bcg {background-image:url('../img/ny/ny8.jpg');}
+#slide-10 .bcg {background-image:url('../img/ny/ny18.jpg');}
+#slide-10b .bcg {background-image:url('../img/ny/ny10b.jpg');}
+#slide-11 .bcg {background-image:url('../img/ny/ny10.jpg');}
+#slide-12 .bcg {background-image:url('../img/ny/ny11.jpg');}
+#slide-13 .bcg {background-image:url('../img/ny/ny12.jpg');}
+#slide-14 .bcg {background-image:url('../img/ny/ny13.jpg');}
+#slide-15 .bcg {background-image:url('../img/ny/ny14.jpg');}
+#slide-16 .bcg {background-image:url('../img/ny/ny15.jpg');}
+#slide-162 .bcg {background-image:url('../img/ny/ny7.jpg');}
+#slide-163 .bcg {background-image:url('../img/ny/ny16a.jpg');}
+#slide-165 .bcg {background-image:url('../img/ny/ny16b.jpg');}
+#slide-17 .bcg {background-image:url('../img/ny/ny16.jpg');}
+#slide-18 .bcg {background-image:url('../img/ny/ny17.jpg');}
+#slide-188 .bcg {background-image:url('../img/ny/ny188.jpg');}
+#slide-19 .bcg {background-image:url('../img/ny/ny9.jpg');}
 #slide-20 .bcg {background: none; background-color: #010101; height: 310px; text-align: center;}
-#slide-21 .bcg {background-image:url('../img/ny19.jpg');}
-#slide-22 .bcg {background-image:url('../img/ny20.jpg');}
-#slide-23 .bcg {background-image:url('../img/ny21.jpg');}
+#slide-21 .bcg {background-image:url('../img/ny/ny19.jpg');}
+#slide-22 .bcg {background-image:url('../img/ny/ny20.jpg');}
+#slide-23 .bcg {background-image:url('../img/ny/ny21.jpg');}
 
 .hsContainer {
 	display: table;

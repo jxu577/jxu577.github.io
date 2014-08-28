@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <style type="text/css">
       html { height: 100% }
       body { height: 100%; margin: 0; padding: 0 }
       #map-canvas { height: 100% }
     </style>
+
+
+
+
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ-qLDz7ONM6vD-6QdTC7qJzH5GFyK_0s">
     </script>
@@ -37,7 +42,7 @@ google.maps.event.addListener(marker, 'click', function() {
     animation: google.maps.Animation.DROP,
 });
 google.maps.event.addListener(marker, 'click', function() {
-        window.open("losangeles.html");
+        window.open("");
      });
      google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
 
@@ -48,7 +53,7 @@ google.maps.event.addListener(marker, 'click', function() {
     animation: google.maps.Animation.DROP,
 });
 google.maps.event.addListener(marker, 'click', function() {
-        window.open("alaska.html");
+        window.open("");
      });
      google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
 
@@ -59,7 +64,7 @@ google.maps.event.addListener(marker, 'click', function() {
     animation: google.maps.Animation.DROP,
 });
 google.maps.event.addListener(marker, 'click', function() {
-        window.open("vancouver.html");
+        window.open("");
      });
      google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
 
@@ -73,7 +78,16 @@ google.maps.event.addListener(marker, 'click', function() {
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
   </head>
-  <body>
+
+
+  <body><center>
+    <p class="customfontsmall">
+    Travles in North America! Click on a marker for pictures. (Currently only New York has been developed)</p></center>
     <div id="map-canvas"/>
   </body>
 </html>
+
+
+
+
+
