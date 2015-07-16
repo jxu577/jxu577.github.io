@@ -2,171 +2,188 @@
 <html lang="en">
 
 
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<meta charset="utf-8">
-		<title>Jacqueline Xu</title>
-		<script src="js/jquery-1.11.1.min.js"></script>
-	</head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <meta charset="utf-8">
+    <title>Jacqueline Xu</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/wow.js"></script>
+  </head>
 
-	<body>
+  <body>
 
-		<script>
-
-			$(document).ready(function () {
-    var menu = $('.menu')
-    var timeout = 0;
-    var hovering = false;
-    menu.hide();
-
-    $('#mainbutton')
-        .on("mouseenter", function () {
-        hovering = true;
-        // Open the menu
-        $('#mainbutton')
-       		.fadeOut(400);
-
-        $('.menu')
-            .stop(true, true)
-            .fadeIn(400);
-
-        if (timeout > 0) {
-            clearTimeout(timeout);
-        }
-    })
-        .on("mouseleave", function () {
-        resetHover();
-    });
-
-    $(".menu")
-        .on("mouseenter", function () {
-        // reset flag
-        hovering = true;
-        // reset timeout
-        startTimeout();
-    })
-        .on("mouseleave", function () {
-        // The timeout is needed incase you go back to the main menu
-        resetHover();
-    });
-
-    function startTimeout() {
-        // This method gives you 1 second to get your mouse to the sub-menu
-        timeout = setTimeout(function () {
-            closeMenu();
-        }, 200);
-    };
-
-    function closeMenu() {
-        // Only close if not hovering
-        if (!hovering) {
-        	$('#mainbutton').fadeIn(400);
-            $('.menu').stop(true, true).fadeOut(400);
-        }
-    };
-
-    function resetHover() {
-        // Allow the menu to close if the flag isn't set by another event
-        hovering = false;
-        // Set the timeout
-        startTimeout();
-    };
+    <script>
+     new WOW().init();
+    </script>
 
 
-    $("#sa").on("mouseenter",function() 
-{ 
-jQuery('#contain').css("background-image", "url(img/peru.jpg)"); 
-}); 
-    $("#na").on("mouseenter",function() 
-{ 
-jQuery('#contain').css("background-image", "url(img/ny.jpg)"); 
-}); 
-    $("#aa").on("mouseenter",function() 
-{ 
-jQuery('#contain').css("background-image", "url(img/china.jpg)"); 
-}); 
-});
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div data-spy="affix" data-offset-top="200" data-offset-bottom="0">
+      <div class="container">
+        
+        <nav>
+          <br>
+          <font face="Playfair Display" size="5">JX</font>
+          <ul class="nav navbar-nav navbar-right navbar-inverse">
+            <li><a href="index.html">HOME</a></li>
+             <li><a href="globe.html">TRAVELS</a></li>
+               <li><a href="art.html">ART</a></li>
+            <li><a href="stories.html">STORIES</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </header>
 
+    <div class="center jumbotron" id="welcome" style="background-image: url('img/home.jpg')">
+      <div class="wow fadeInDown">
+        <img src="img/NAME.png">
 
-		</script>
-
-		<div id="mainbutton">
-				<img src="img/navi.png">
-		</div>
-
-		<div class="menu">
-			<div class ="title"> 
-				<center>
-					<img src="img/NAME.png">
-				</center>
-			</div>
-			<div class="navi">
-				<center>
-					<a href="index.html">HOME</a>
-					<a href="travels.html">TRAVELS</a>
-					<a href="art.html">ART</a>	
-					<a href="writing.html">WRITING</a>	
-				</center>
-			</div>
-		</div>
-
-
-
-<!--
-<div class="divcontenitore">
-<div id="mainbutton">
-  <a class="button_down_container" title="">
-    <div class="arrow-down arrow_pos1 arrowflip1"></div>
-    <div class="arrow-down arrow_pos2 arrowflip2"></div>
-  </a>
-
+        <h2><i>626. Arcadia. Berkeley '15. CS/Businesss. City by the Bay. Stripe.</i>
+        </h2>
 </div>
-		</center>
-		</div>-->
-		
-
- 
-
-		<div class="picture">
-			<center>
-				<div id ="containh">
-				</div>
-			</center>
-			<div class="maindown">
-				<center>
-					<p class="customfontsmall"><br><br><br>
-						Hi there. I grew up in the sunny suburbs near Los Angeles, California.<br>
-						I am currently a student at UC Berkeley studying Business and Computer Science.<br><br><br><br>
-						I like biking across famous bridges and singing karaoke at the top of my little lungs <br>
-						In general, I have a strong bias towards communal and/or effortful activities - both physical and mental<br><br><br><br>
-
-
-						Hover over the squares in the middle to navigate.<br>
-						If a link does not lead anywhere, the page has not been developed yet.<br><Br><br><br>
-
-
-						I hope to share with you the ordinarily good, the estatically amazing, and the pitifully ugly<br><br>
-
-						<br><br><br><br>
-						<a href="https://www.linkedin.com/profile/view?id=145397049&trk=spm_pic">LINKEDIN</a><br><br>
-						<a href="https://www.behance.net/jacquelinexu">BEHANCE</a><br><br>
-						<a href="http://www.quora.com/Jacqueline-Xu-1">QUORA</a><br><br>
-						<a href="https://github.com/jxu577">GITHUB</a><br><br>
-						
-						
-					</p>
-				</center>
-			</div>
-		</div>
+        
+       
+        <div class="footer">
+       <div class="wow fadeInUp"><center>
+      <a href="https://www.facebook.com/jacquelinexu">FACEBOOK -</a>
+        <a href="https://www.linkedin.com/profile/view?id=145397049&trk=spm_pic">LINKEDIN -</a>
+        <a href="http://www.quora.com/Jacqueline-Xu-1">QUORA -</a>
+        <a href="https://www.behance.net/jacquelinexu">BEHANCE -</a>
+        <a href="https://github.com/jxu577">GITHUB</a>
+    </div>
+    </div>
 
 
 
-		<div class = "bottom">
-			<center>
-				<p class="customfontsmall">
-					JACQUELINE XU 
-				</p>
-		</div>
-		
-	</body>
+        
+   </div>
+
+
+    <!--<div class="jumbotron" id="about">
+    <div class="container">
+      <div class="row" >
+        <div class="wow fadeInDown" >
+          <h1>
+            Students
+          </h1>
+          <h2>
+            Find student loans at the lowest interest rates
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"><center>
+          <div class="wow fadeInDown" >
+            <%= image_tag("loans.png", :width => 200) %><br><br>
+            Loans are messy 
+          </div>
+        </div>
+        <div class="col-md-3"><center>
+          <div class="wow fadeInDown" data-wow-delay="0.5s">
+            <%= image_tag("student.png", :width => 200) %><br><br>
+            Debt can be crippling
+          </div>
+        </div>
+        <div class="col-md-3"><center>
+          <div class="wow fadeInDown" data-wow-delay="1s">
+            <%= image_tag("community.png", :width => 200) %><br><br>
+            We offer the support and community you need
+          </div>
+        </div>
+        <div class="col-md-3"><center>
+          <div class="wow fadeInDown" data-wow-delay="1.5s">
+            <%= image_tag("girl.png", :width => 200) %><br><br>
+            So you can focus on succeeding in school
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="jumbotron" id="examples" style="background-color:#fff">
+    <div class="container" >
+      <div class="row">
+        <div class="wow fadeInDown" >
+          <h1>
+            Alumni
+          </h1>
+          <h2>
+            Give back and connect
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"><center>
+          <div class="wow fadeInDown" >
+            <%= image_tag("students.png", :width =>200) %><br><br>
+            Unique matching algorithm connects you with students
+          </div>
+        </div>
+        <div class="col-md-3"><center>
+          <div class="wow fadeInDown" data-wow-delay="0.5s">
+            <%= image_tag("potential.png", :width => 200) %><br><br>
+            Discover potential 
+          </div>
+        </div>
+        <div class="col-md-3"><center>
+          <div class="wow fadeInDown" data-wow-delay="1s">
+            <%= image_tag("money.png", :width => 200) %><br><br>
+            Know where your money is going
+          </div>
+        </div>
+        <div class="col-md-3"><center>
+          <div class="wow fadeInDown" data-wow-delay="1.5s">
+            <%= image_tag("stock.png", :width => 200) %><br><br>
+            Earn a return
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="jumbotron" id="more">
+    <div class="container">
+      <div class="row">
+        <h1>
+          FAQ
+        </h1>
+        <h2>
+          Why should you work with us?
+        </h2>
+      </div>
+      <div class="row">
+      <h4>Students</h4><br>
+        <h5>How do I begin the process of finding a loan?</h5>
+        Students apply to be featured on the site. Fill out your information and create a profile that alumni can search for. If an alumni is interested in donating, they will contact you.<br><br>
+
+        <h5>What will my interest rate be?</h5>
+        First 100 students are guaranteed a 5% interest rate. Following the promotion, rates will be based on a standard credibility assessment.<br><br>
+
+      <h4>Alumni</h4><br>
+
+        <h5>How do I connect with a student?</h5>
+        Browse through student profiles on Lumna. If you find someone you are interested in, Lumna will connect you with the student and help you set up a loan agreement with them.<br><br>
+
+        <h5>What will my return be?</h5>
+        We use a multi-tiered system based on your donation amount.<br>
+        Interest rate tiers:<br>
+        0% below $1000<br>
+        2 - 3% $1000 - $5000<br>
+        5% $5000+<br><br>
+
+        <h4>Contact</h4><br>
+      For additional questions please send an email to lumnaconnect@gmail.com<br>
+    </div>
+      </div>
+
+    </div>-->
+
+
+
+    
+  </body>
 </html>
