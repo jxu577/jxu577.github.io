@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+       <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+
+
+
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ-qLDz7ONM6vD-6QdTC7qJzH5GFyK_0s">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(20, 0),
+          zoom: 2
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      
+
+var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(40.712784,-74.005941),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "newyork.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+     var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(34.052234,-118.243685),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+         window.location = "losangeles.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+     var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(64.307777,-149.182663),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+         window.location = "alaska.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+       var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(49.261226,-123.113927),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+         window.location = "vancouver.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+       var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(-13.163141,-72.544963),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+         window.location = "machupicchu.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+     var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(-3.743673,-73.251633),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "iquitos.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+    var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(34.134728,-116.313066),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "joshuatree.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+    
+
+      var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(37.774929,-122.419416),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "sanfrancisco.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+       var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(39.904211,116.407395),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "beijing.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+       var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(31.230416,121.473701),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "shanghai.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+
+       var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(53.349805,-6.260310),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "dublin.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+      var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(51.507351,-0.127758),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "london.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+      var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(48.856614,2.352222),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "paris.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+       var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(52.370216,4.895168),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "amsterdam.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+
+       var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(52.520007,13.404954),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "berlin.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+
+       var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(50.075538,14.437800),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "prague.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+     var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(47.497912,19.040235),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "budapest.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+  var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(48.856614,16.373819),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "vienna.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+  var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(45.440847,12.315515),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "venice.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+
+  var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(41.902783,12.496366),
+    map: map,
+    animation: google.maps.Animation.DROP,
+});
+google.maps.event.addListener(marker, 'click', function() {
+        window.location = "rome.html";
+     });
+     google.maps.event.addListener(marker, 'click', marker.setAnimation(google.maps.Animation.BOUNCE));
+
+
+
+
+      };
+
+
+     
+
+
+
+
+
+      
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+
+
+  <body><header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <nav>
+          <br>
+          <font face="Playfair Display" size="5">JX</font>
+          <ul class="nav navbar-nav navbar-right navbar-inverse">
+            <li><a href="index.html">HOME</a></li>
+             <li><a href="globe.html">TRAVELS</a></li>
+               <li><a href="art.html">ART</a></li>
+            <li><a href="stories.html">STORIES</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header><br><br>
+    <div id="map-canvas"/>
+  </body>
+</html>
+
+
+
+
+
